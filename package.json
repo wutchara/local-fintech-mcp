@@ -1,0 +1,26 @@
+{
+  "name": "the-local-fintech-mcp-server",
+  "version": "1.0.0",
+  "description": "The Scenario You need to build a local backend service that exposes a mock financial database to an AI agent. The agent must be able to securely query this server to retrieve a user's transaction history and flag potential anomalies (e.g., unusually high spending).",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
